@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    height: 450vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+         "slide-show slide-show"
+        "big-image big-image"
+        "small-image small-image-2"
+         "big-image-2 big-image-2"
+        "small-image-3 small-image-4"
+        "small-image-5 small-image-6"
+        "big-image-3 big-image-3"
+        "footer footer"; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px .65fr .65fr .4fr .65fr .4fr .4fr .65fr 50px;
+    gap: 10px;
+    width: 90%;
+    /* max-width: 800px; */
+    height: 99%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-header {
+    grid-area: header;
+    background-color: #ff6b6b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.slide-show {
+    grid-area: slide-show;
+    background-color: #4ecdc4;
+}
+
+.big-image {
+    grid-area: big-image;
+    background-color: #1a535c;
+    color: #080101;
+}
+
+.big-image-2 {
+    grid-area: big-image-2;
+    background-color: #1a535c;
+    color: #080101;
+}
+
+.big-image-3 {
+    grid-area: big-image-3;
+    background-color: #1a535c;
+    color: #080101;
+}
+
+
+.small-image {
+    grid-area: small-image;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+.small-image-2 {
+    grid-area: small-image-2;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+.small-image-3 {
+    grid-area: small-image-3;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+.small-image-4 {
+    grid-area: small-image-4;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+.small-image-5 {
+    grid-area: small-image-5;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+.small-image-6 {
+    grid-area: small-image-6;
+    background-color: #1a535c;
+    color: #030202;
+}
+
+
+.grid-footer {
+    grid-area: footer;
+    background-color: #ffe66d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
