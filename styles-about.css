@@ -2,10 +2,12 @@
     display: grid;
     grid-template-areas:
       "header header header header header"
+      ". . . . ."
       ". big-image big-image about-text ."
+      ". . . . ."
       "footer footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(58px, 68px) 80vh 50px;
+    grid-template-rows: minmax(58px, 68px) 1fr 1fr 1fr 50px;
     gap: 10px;
     width: 100%;
     /* max-width: 800px; */
@@ -72,7 +74,7 @@
   
   .image-container-about {
       grid-area: big-image;
-      /* aspect-ratio: 8/5; */
+      aspect-ratio: 16/11;
     }
   
   .big-image {
@@ -90,6 +92,7 @@
     display: flex;           /* Allows for vertical centering */
     align-items: center;     /* Centers content vertically */
     justify-content: center; 
+    font-size: 12px;
 
   }
 
