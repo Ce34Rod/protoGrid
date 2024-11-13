@@ -2,11 +2,31 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
     <title>Grid Layout with Header</title>
 </head>
 <body>
     <div class="grid-container">
-        <header class="grid-header">Header</header>
+        <header class="grid-header">
+            <div class="raw container">
+                <div class="col-6">
+                  <div class="menu">
+                    <a href="#">
+                      <span>Menu</span>
+                    </a>
+                  </div>
+                </div>
+      
+                <div class="col-6 logo">
+                  <a href="portfolio.html"><img src="CERNlogo.svg" alt="logo" /></a>
+                </div>
+      
+                <ul class="dropdown">
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </div>
+         </header>
         <div class="grid-item slide-show">Slide Show</div>
         <div class="grid-item big-image">Big Image</div>
         <div class="grid-item small-image">Small Image</div> 
