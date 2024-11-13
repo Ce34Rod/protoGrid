@@ -2,7 +2,7 @@
     display: grid;
     grid-template-areas:
       "header header header header header"
-      ". big-image big-image . ."
+      ". big-image big-image about-text ."
       "footer footer footer footer footer";
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: minmax(58px, 68px) 80vh 50px;
@@ -79,6 +79,18 @@
       width: 100%;
     height: 100%;
       object-fit: scale-down;
+  }
+
+  .about-text-container {
+    grid-area: about-text;
+  }
+
+  .about-text {
+    text-align: center;      /* Centers text horizontally */
+    display: flex;           /* Allows for vertical centering */
+    align-items: center;     /* Centers content vertically */
+    justify-content: center; 
+
   }
 
   .grid-footer {
