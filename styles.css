@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  height: 450vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +19,9 @@ body {
     "big-image-3 big-image-3"
     "footer footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .11fr 0.65fr 0.65fr 0.4fr 0.65fr 0.4fr 0.4fr 0.65fr 50px;
+  grid-template-rows: minmax(58px, 68px) 2fr 2fr 1fr 2fr 1fr 1fr 2fr 50px;
   gap: 10px;
-  width: 90%;
+  width: 97%;
   /* max-width: 800px; */
   height: 99%;
   background-color: #fff;
@@ -39,29 +38,35 @@ body {
   grid-template-areas: "small-anchor small-anchor-2 logo small-anchor-3 small-anchor-4";
   background-color: #313131;
   color: #fff;
+  font-family: Sinhala MN;
+  font-weight: 200;
   font-size: 1.5rem;
   place-items: center;
+
 }
 
 .small-anchor {
-    grid-area: small-anchor;
-
+  grid-area: small-anchor;
+  font-size: clamp(12px, 1.6vw, 20px);
 }
 
 .small-anchor-2 {
-    grid-area: small-anchor-2;
+  grid-area: small-anchor-2;
+  font-size: clamp(12px, 1.6vw, 20px);
 }
 
 .small-anchor-3 {
-    grid-area: small-anchor-3;
+  grid-area: small-anchor-3;
+  font-size: clamp(12px, 1.6vw, 20px);
 }
 
 .small-anchor-4 {
-    grid-area: small-anchor-4;
+  grid-area: small-anchor-4;
+  font-size: clamp(12px, 1.6vw, 20px);
 }
 
 .logo-box {
-    grid-area: logo;
+  grid-area: logo;
 }
 
 .logo-img {
@@ -69,68 +74,92 @@ body {
   height: auto;
 }
 
+.slideshow-container {
+    grid-area: slide-show;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    aspect-ratio: 16/11;
+    overflow: hidden; /* Prevent images from overflowing the container */
+
+}
+
 .slide-show {
   grid-area: slide-show;
-  background-color: #4ecdc4;
+  
+}
+
+.slideshow-img {
+grid-area: slide-show;
+  position: absolute; /* Take the image out of normal document flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  opacity: 0;
+  transition: opacity 1.9s ease-in-out;
+}
+
+.big-image-container {
+  grid-area: big-image;
+  /* overflow: hidden; */
+  aspect-ratio: 8/5;
 }
 
 .big-image {
-  grid-area: big-image;
-  background-color: #1a535c;
-  color: #080101;
+    width: 100%;
+  height: 100%;
+    object-fit: scale-down;
 }
 
 .big-image-2 {
   grid-area: big-image-2;
-  background-color: #1a535c;
-  color: #080101;
+  aspect-ratio: 16/11;
 }
 
 .big-image-3 {
   grid-area: big-image-3;
-  background-color: #1a535c;
-  color: #080101;
+  aspect-ratio: 16/11;
 }
 
 .small-image {
   grid-area: small-image;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .small-image-2 {
   grid-area: small-image-2;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .small-image-3 {
   grid-area: small-image-3;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .small-image-4 {
   grid-area: small-image-4;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .small-image-5 {
   grid-area: small-image-5;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .small-image-6 {
   grid-area: small-image-6;
-  background-color: #1a535c;
-  color: #030202;
+  aspect-ratio: 16/11;
 }
 
 .grid-footer {
   grid-area: footer;
-  background-color: #ffe66d;
+  background-color: #313131;
+  color: white;
+  font-family: Sinhala MN;
+  font-weight: 200;
   display: flex;
   justify-content: center;
   align-items: center;
