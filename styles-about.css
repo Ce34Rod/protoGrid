@@ -1,3 +1,5 @@
+
+
 .grid-container-about {
     display: grid;
     grid-template-areas:
@@ -12,7 +14,7 @@
     width: 100%;
     /* max-width: 800px; */
     height: 99%;
-    background-color: #fff;
+    background-color: lightgrey;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -75,12 +77,14 @@
   .image-container-about {
       grid-area: big-image;
       aspect-ratio: 16/11;
+      background-color: lightgray;
     }
   
   .big-image {
-      width: 100%;
-    height: 100%;
-      object-fit: scale-down;
+      width: 80%;
+    height: 80%;
+      object-fit: cover;
+      border: 30px solid rgb(233, 229, 226);	
   }
 
   .about-text-container {
