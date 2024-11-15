@@ -1,25 +1,29 @@
-
-
-.grid-container-about {
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .grid-container {
     display: grid;
     grid-template-areas:
-      "header header header header header"
-      ". . . . ."
-      ". big-image big-image about-text ."
-      ". . . . ."
-      "footer footer footer footer footer";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: minmax(58px, 68px) 1fr 1fr 1fr 50px;
+      "header header"
+      "brothers-blessing ."
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(58px, 68px) 50% 50px;
     gap: 10px;
-    width: 100%;
+    width: 97%;
     /* max-width: 800px; */
     height: 99%;
-    background-color: lightgrey;
+    background-color: #fff;
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
-
+  
   .grid-header {
     grid-area: header;
     display: grid;
@@ -32,7 +36,6 @@
     font-weight: 200;
     font-size: 1.5rem;
     place-items: center;
-  
   }
   
   .small-anchor-home {
@@ -47,7 +50,6 @@
     font-size: clamp(12px, 1.6vw, 20px);
     color: #fff;
     text-decoration-line: none;
-
   }
   
   .small-anchor-pricing {
@@ -72,34 +74,17 @@
     max-width: 100%;
     height: auto;
   }
-
   
-  .image-container-about {
-      grid-area: big-image;
-      aspect-ratio: 16/11;
-      background-color: lightgray;
-    }
+  .big-image-container {
+    grid-area: brothers-blessing;
+  }
   
   .big-image {
-      width: 80%;
-    height: 80%;
-      object-fit: cover;
-      border: 30px solid rgb(233, 229, 226);	
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
   }
-
-  .about-text-container {
-    grid-area: about-text;
-  }
-
-  .about-text {
-    text-align: center;      /* Centers text horizontally */
-    display: flex;           /* Allows for vertical centering */
-    align-items: center;     /* Centers content vertically */
-    justify-content: center; 
-    font-size: 12px;
-
-  }
-
+  
   .grid-footer {
     grid-area: footer;
     background-color: #313131;
@@ -110,4 +95,3 @@
     justify-content: center;
     align-items: center;
   }
-  
