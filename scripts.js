@@ -10,3 +10,5 @@ function nextImage() {
     currentImageCounter = (currentImageCounter + 1) % slideshowImages.length;
     slideshowImages[currentImageCounter].style.opacity = 1;
 }
+
+
