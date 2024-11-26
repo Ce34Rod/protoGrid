@@ -173,6 +173,7 @@ body {
   grid-area: footer;
   background-color: #313131;
   color: white;
+  font-size: 39px;
   font-family: Sinhala MN;
   font-weight: 200;
   display: flex;
@@ -256,6 +257,6 @@ body {
     font-family: 'Sinhala MN';
   }
   .grid-container {
-    grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 1fr 2fr 50px;
+    grid-template-rows: 1fr 2fr 2fr 1fr 2fr 1fr 1fr 2fr .5fr;
   }
 }

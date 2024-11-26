@@ -1,6 +1,6 @@
 function loadHeader () {
     const header = document.getElementById("header");
-    const isMobile  = window.matchMedia("(max-width: 1000px)").matches;
+    const isMobile  = window.matchMedia("(max-width: 1000px) and (min-resolution: 3dppx)").matches;
 
     if(isMobile) {
         header.innerHTML = `<a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img-small" /></a>
