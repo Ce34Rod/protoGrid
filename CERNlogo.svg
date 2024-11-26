@@ -13,6 +13,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
+
+   <style>
+    @font-face {
+      font-family: 'Sinhala MN';
+      src: url('SinhalaMN.ttf') format('truetype');
+    }
+  </style>
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#505050"
