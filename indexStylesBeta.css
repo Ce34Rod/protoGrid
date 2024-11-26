@@ -181,6 +181,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 1000px) {
+  .grid-footer {
+    font-size: 22px;
+  }
+}
+
 @media (max-width: 1000px) and (min-resolution: 3dppx) {
   .grid-header {
     display: grid;

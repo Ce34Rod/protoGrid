@@ -10,7 +10,7 @@ body {
   display: grid;
   grid-template-areas:
     "header header"
-    "boxes boxes"
+    "text text"
     "footer footer";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(58px, 68px) 100vh 50px;
@@ -75,55 +75,115 @@ body {
   height: auto;
 }
 
-.grid-container-boxes {
-  grid-area: boxes;
-  display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
+.text {
+  grid-area: text;
+  display: block;
 }
-
-.grid-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.grid-item-1 {
-background-color: #313131;
-color: azure;
-}
-
-.grid-item-2 {
-background-color: #313131;
-color: azure;
-}
-
-.grid-item-3 {
-background-color: #313131;
-color: azure;
-}
-
-.grid-item-4 {
-background-color: #313131;
-color: azure;
-}
-
-.grid-item-5 {
-background-color: #313131;
-color: azure;
-}
-
 .grid-footer {
   grid-area: footer;
   background-color: #313131;
   color: white;
+  font-size: 39px;
   font-family: Sinhala MN;
   font-weight: 200;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1000px) {
+  .grid-footer {
+    font-size: 22px;
+  }
+}
+
+
+
+@media (max-width: 1000px) and (min-resolution: 3dppx) {
+  .grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+     ". . . . . . . . ."
+    ". . . . . . . . ."
+    ". . CERN CERN CERN . drop-down . ."
+    ". . CERN CERN CERN . drop-down . ."
+    ". . CERN CERN CERN . drop-down . ."
+    ". . . . . . . . ."
+    ". . . . . . . . .";
+  }
+
+  .dropbtn {
+    background-color: #313131;
+    color: white;
+    padding: 5px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: grey;
+  }
+
+  .dropdown {
+    grid-area: drop-down;
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .grid-header a:not(:has(img)) {
+    /* display: none; Hide all anchor tags without an image */
+  }
+
+  .logo-box {
+    grid-area: CERN;
+    display: grid; /* Use grid to easily center the image */
+    place-items: center; /* Center the image within the grid area */
+  }
+  
+  .logo-img-small {
+    width: 100%; /* Take up the full width of the grid area */
+    height: 100%; /* Take up the full height of the grid area */
+    font-family: 'Sinhala MN';
+  }
+
+  .text {
+    font-size: 39px;
+  }
+
+  .grid-footer {
+    font-size: 32px;
+  }
+  .grid-container {
+    grid-template-rows:  15vh 65vh .5fr;
+  }
+}
+
