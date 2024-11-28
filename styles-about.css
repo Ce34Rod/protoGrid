@@ -103,6 +103,7 @@ body {
     display: flex;           /* Allows for vertical centering */
     align-items: center;     /* Centers content vertically */
     justify-content: center; 
+    font-family: Sanhala MN;
     font-size: 17px;
 
   }
@@ -200,8 +201,8 @@ body {
       font-family: 'Sinhala MN';
     }
   
-    .text {
-      font-size: 39px;
+    .about-text {
+      font-size: 29px;
     }
   
     .grid-footer {

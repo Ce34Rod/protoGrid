@@ -145,7 +145,7 @@ body {
 }
 
 
-@media (max-width: 1000px) and (min-resolution: 3dppx) {
+@media (max-width: 1000px) {
   .grid-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -222,7 +222,22 @@ body {
   }
 
   .grid-container {
-    grid-template-rows: 15vh 1fr 1fr 1fr 1fr 1fr 1fr 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh repeat(11, 1fr) 10vh;
+    grid-template-areas: 
+    "header"
+    "brothers-blessing" 
+    "beast"
+    "lotus"
+    "jellyfish"
+    "tower" 
+    "motorcycle"
+    "air-ballon" 
+    "graduation"
+    "office"
+    "wedding"
+    "protest "
+    "footer";
   }
   .grid-footer {
     font-size: 32px;

@@ -77,6 +77,7 @@ body {
 
 .text {
   grid-area: text;
+  background-color: grey;
   display: block;
 }
 .grid-footer {
