@@ -1,7 +1,7 @@
 function loadHeader() {
   const header = document.getElementById("header");
   const isMobile = window.matchMedia(
-    "(max-width: 1000px) and (min-resolution: 3dppx)"
+    "(max-width: 1000px)"
   ).matches;
 
   if (isMobile) {
