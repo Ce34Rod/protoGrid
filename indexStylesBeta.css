@@ -89,6 +89,7 @@ body {
 .logo-img {
   max-width: 100%;
   height: auto;
+  padding-top: 5px;
 }
 
 .slideshow-container {
