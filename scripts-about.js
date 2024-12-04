@@ -49,7 +49,7 @@ function loadHeader () {
       <header class="grid-header" id="header">
         <a class="small-anchor-home" href="index.html">Home</a>
         <a class="small-anchor-about" href="about.html">About</a>
-        <a href="index.html"><img src="CERNlogo.svg" alt="logo" class="logo-img" /></a>
+        <a href="index.html"><img src="images/CERNlogo.png" alt="logo" class="logo-img" /></a>
         <a class="small-anchor-pricing" href="pricing.html">Pricing</a>
         <a class="small-anchor-more-photos" href="more-photos.html">More Photos</a>
       </header>
