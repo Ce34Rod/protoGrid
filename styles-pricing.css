@@ -101,7 +101,7 @@ body {
 
 
 
-@media (max-width: 1000px) and (min-resolution: 3dppx) {
+@media (max-width: 1000px){
   .grid-header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
