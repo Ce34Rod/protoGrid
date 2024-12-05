@@ -7,7 +7,7 @@ function loadHeader () {
         document.body.innerHTML = `
         <div class="grid-container">
         <header class="grid-header" id="header">
-        <a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img-small" /></a>
+        <a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img" /></a>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">| | |</button>
             <div id="myDropdown" class="dropdown-content">

@@ -3,7 +3,7 @@ function loadHeader () {
     const isMobile  = window.matchMedia("(max-width: 1000px)").matches;
 
     if(isMobile) {
-        header.innerHTML = `<a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img-small" /></a>
+        header.innerHTML = `<a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img" /></a>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">| | |</button>
             <div id="myDropdown" class="dropdown-content">
