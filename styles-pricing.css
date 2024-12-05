@@ -78,7 +78,7 @@ body {
 
 .text {
   grid-area: text;
-  background-color: grey;
+  background-color: lightgray;
   display: block;
 }
 .grid-footer {
@@ -167,14 +167,12 @@ body {
 
   .logo-box {
     grid-area: CERN;
-    display: grid; /* Use grid to easily center the image */
-    place-items: center; /* Center the image within the grid area */
   }
   
-  .logo-img-small {
-    width: 100%; /* Take up the full width of the grid area */
-    height: 100%; /* Take up the full height of the grid area */
-    font-family: 'Sinhala MN';
+  .logo-img {
+    max-width: 222px;
+  max-height: none;
+  padding-top: 5px;
   }
 
   .text {
