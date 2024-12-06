@@ -6,6 +6,12 @@ body {
     background-color: #f0f0f0; */
 }
 
+@font-face {
+  font-family: 'Sinhala MN';
+  src: url('SinhalaMN.ttf') format('truetype');
+  font-display: swap;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
