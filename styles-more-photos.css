@@ -77,7 +77,7 @@ body {
 
 .logo-img {
   max-width: 200px;
-  max-height: 50px;
+  max-height: 39px;
   padding-top: 5px;
 }
 
@@ -219,12 +219,11 @@ body {
   .logo-img-small {
     width: 100%; /* Take up the full width of the grid area */
     height: 100%; /* Take up the full height of the grid area */
-    font-family: 'Sinhala MN';
   }
 
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh repeat(11, 1fr) 10vh;
+    grid-template-rows: 20vh repeat(11, 1fr) 10vh;
     grid-template-areas: 
     "header"
     "brothers-blessing" 
