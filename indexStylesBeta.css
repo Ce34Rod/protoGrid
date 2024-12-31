@@ -54,6 +54,12 @@ body {
   display: none;
 }
 
+.palm-tree {
+  grid-area: palm-tree;
+  max-width: 40px;
+  max-height: 40px;
+}
+
 .small-anchor-home {
   grid-area: small-anchor;
   font-size: clamp(12px, 1.6vw, 20px);
@@ -174,9 +180,9 @@ body {
   grid-area: footer;
   background-color: #313131;
   color: white;
-  font-size: 39px;
+  font-size: 29px;
   font-family: Sinhala MN;
-  font-weight: 200;
+  /* font-weight: 50; */
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,7 +13,8 @@ function loadHeader () {
             </div>`
     }
     else {
-        header.innerHTML = `<a class="small-anchor-home" href="index.html">Home</a>
+        header.innerHTML = `
+        <a class="small-anchor-home" href="index.html">Home</a>
         <a class="small-anchor-about" href="about.html">About</a>
         <a href="index.html" class="logo-box"><img src="images/CERNlogo.png" alt="logo" class="logo-img" /></a>
         <a class="small-anchor-pricing" href="pricing.html">Pricing</a>
