@@ -24,7 +24,7 @@ body {
     grid-template-columns: 5vh 1fr 1fr 1fr 5vh;
     grid-template-rows: minmax(58px, 68px) 10vh 2fr 10vh 50px;
     gap: 10px;
-    width: 100%;
+    width: 97%;
     /* max-width: 800px; */
     height: 99%;
     background-color: lightgrey;
@@ -119,9 +119,8 @@ body {
     grid-area: footer;
     background-color: #313131;
     color: white;
-    font-size: 22px;
+    font-size: 29px;
     font-family: Sinhala MN;
-    font-weight: 200;
     display: flex;
     justify-content: center;
     align-items: center;
